@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RealDashCAN version="2">
+  <frames>
+    <frame id="0x3">
+      <value name="TEST_Brakepressed" startbit="21" bitcount="1" units="bit"/>
+    </frame>
+  </frames>
+</RealDashCAN>
