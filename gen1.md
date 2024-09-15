@@ -1,3 +1,8 @@
+This file was pulled from the following repository
+https://github.com/timurrrr/ft86/blob/main/can_bus/gen1.md
+Thank you timurrrr for your work on this :)
+
+
 # CAN bus (2013-2020 model years)
 
 ## Pre-word
