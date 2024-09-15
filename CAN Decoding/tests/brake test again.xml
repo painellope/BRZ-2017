@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RealDashCAN version="2">
+	<frames>
+		<frame id="0x0d3">
+			<!-- 93 is dummy 1 -->
+			<value targetId="93" startbit="21" bitcount="1" units="bit"></value>
+		</frame>
+	</frames>
+</RealDashCAN>s

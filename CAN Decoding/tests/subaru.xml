@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by DBCtoRDXML Converter https://github.com/wjcloudy/DBCtoRDXML -->
+<!-- 14/05/2024 -->
+<RealDashCAN version="2">
+	<frames>
+		<frame canId="0x200" endianess="big">  
+			<!-- BASE0 - Base0[512] -->
+			<value name="WarningCounter" offset="0" length="2" units="None"  signed="false" rangeMin="None" rangeMax="None" ></value>
+			<!--Comment = Total warnings since ECU start time-->
+			<value name="LastError" offset="2" length="2" units="None"  signed="false" rangeMin="None" rangeMax="None" ></value>
+			<!--Comment = Last error code-->
+			<value name="Fan2" units="bit" startbit="39" bitcount="1"></value>
+			<!--Comment = None-->
+			<value name="Fan" units="bit" startbit="38" bitcount="1"></value>
+			<!--Comment = None-->
+			<value name="LambdaProtectAct" units="bit" startbit="37" bitcount="1"></value>
+			<!--Comment = Lambda protection active (fault detected)-->
+			<value name="EGOHeatAct" units="bit" startbit="36" bitcount="1"></value>
+			<!--Comment = EGO Heater Commanded On-->
+			<value name="CELAct" units="bit" startbit="35" bitcount="1"></value>
+			<!--Comment = Check Engine Light Active-->
+			<value name="FuelPumpAct" units="bit" startbit="34" bitcount="1"></value>
+			<!--Comment = Fuel Pump Output Active-->
+			<value name="MainRelayAct" units="bit" startbit="33" bitcount="1"></value>
+			<!--Comment = Main Relay Active-->
+			<value name="RevLimAct" units="bit" startbit="32" bitcount="1"></value>
+			<!--Comment = RPM Limiter Active-->
+			<value name="CurrentGear" offset="5" length="1" units="None"  signed="false" rangeMin="None" rangeMax="None" ></value>
+			<!--Comment = Current detected gear. 0 means neutral, 1 means first, etc.-->
+			<value name="DistanceTraveled" offset="6" length="2" units="km"  signed="false" rangeMin="0" rangeMax="6553.5" conversion="V/10.0"></value>
+			<!--Comment = Distance traveled since reset-->
+		</frame>
+		<frame canId="0x201" endianess="big">  
+			<!-- BASE1 - Base1[513] -->
+			<value name="RPM" offset="0" length="2" units="RPM"  signed="false" rangeMin="None" rangeMax="None" ></value>
+			<!--Comment = Current RPM-->
+			<value name="IgnitionTiming" offset="2" length="2" units="deg"  signed="true" rangeMin="None" rangeMax="None" conversion="V/50.0"></value>
+			<!--Comment = Current Ignition Timing. Positive is advance.-->
+			<value name="InjDuty" offset="4" length="1" units="%"  signed="false" rangeMin="0" rangeMax="100" conversion="V/2.0"></value>
+			<!--Comment = Injection Duty
+-->
+			<value name="IgnDuty" offset="5" length="1" units="%"  signed="false" rangeMin="0" rangeMax="100" conversion="V/2.0"></value>
+			<!--Comment = Ignition Duty-->
+			<value name="VehicleSpeed" offset="6" length="1" units="kph"  signed="false" rangeMin="0" rangeMax="255" ></value>
+			<!--Comment = Current Vehicle Speed-->
+			<value name="FlexPct" offset="7" length="1" units="%"  signed="false" rangeMin="0" rangeMax="100" ></value>
+			<!--Comment = Ethanol percent-->
+		</frame>
+		<frame canId="0x202" endianess="big">  
+			<!-- BASE2 - Throttle positions[514] -->
+			<value name="PPS" offset="0" length="2" units="%"  signed="true" rangeMin="0" rangeMax="100" conversion="V/100.0"></value>
+			<!--Comment = Current Accelerator Pedal Position
+-->
+			<value name="TPS1" offset="2" length="2" units="%"  signed="true" rangeMin="0" rangeMax="100" conversion="V/100.0"></value>
+			<!--Comment = Throttle Body 1 Position-->
+			<value name="TPS2" offset="4" length="2" units="%"  signed="true" rangeMin="0" rangeMax="100" conversion="V/100.0"></value>
+			<!--Comment = Throttle Body 2 Position-->
+			<value name="Wastegate" offset="6" length="2" units="%"  signed="true" rangeMin="0" rangeMax="100" conversion="V/100.0"></value>
+			<!--Comment = Wastegate actuator position-->
+		</frame>
+		<frame canId="0x203" endianess="big">  
+			<!-- BASE3 - Base3[515] -->
+			<value name="MAP" offset="0" length="2" units="kPa"  signed="false" rangeMin="None" rangeMax="None" conversion="V/30.000003000000298"></value>
+			<!--Comment = Current MAP Reading-->
+			<value name="CoolantTemp" offset="2" length="1" units="deg C"  signed="false" rangeMin="4294967256" rangeMax="200" conversion="V-40"></value>
+			<!--Comment = Current Coolant Temperature Reading-->
+			<value name="IntakeTemp" offset="3" length="1" units="deg C"  signed="false" rangeMin="4294967256" rangeMax="200" conversion="V-40"></value>
+			<!--Comment = Current Intake Air Temperature-->
+			<value name="AUX1Temp" offset="4" length="1" units="deg C"  signed="false" rangeMin="4294967256" rangeMax="200" conversion="V-40"></value>
+			<!--Comment = Current Aux1 Temperature-->
+			<value name="AUX2Temp" offset="5" length="1" units="deg C"  signed="false" rangeMin="4294967256" rangeMax="200" conversion="V-40"></value>
+			<!--Comment = Current Aux2 Temperature-->
+			<value name="MCUTemp" offset="6" length="1" units="deg C"  signed="false" rangeMin="4294967256" rangeMax="100" conversion="V-40"></value>
+			<!--Comment = Current MCU Temperature-->
+			<value name="FuelLevel" offset="7" length="1" units="%"  signed="false" rangeMin="None" rangeMax="None" conversion="V/2.0"></value>
+			<!--Comment = Current Fuel Level-->
+		</frame>
+		<frame canId="0x204" endianess="big">  
+			<!-- BASE4 - Base4[516] -->
+			<value name="OilPress" offset="2" length="2" units="kPa"  signed="false" rangeMin="None" rangeMax="None" conversion="V/30.000003000000298"></value>
+			<!--Comment = Current Oil Pressure Reading-->
+			<value name="OilTemperature" offset="4" length="1" units="deg C"  signed="false" rangeMin="4294967256" rangeMax="215" conversion="V-40"></value>
+			<!--Comment = None-->
+			<value name="FuelTemperature" offset="5" length="1" units="deg C"  signed="false" rangeMin="4294967256" rangeMax="215" conversion="V-40"></value>
+			<!--Comment = None-->
+			<value name="BattVolt" offset="6" length="2" units="mV"  signed="false" rangeMin="0" rangeMax="25" conversion="V/1000.0"></value>
+			<!--Comment = Current Battery Voltage Reading-->
+		</frame>
+		<frame canId="0x205" endianess="big">  
+			<!-- BASE5 - Base5[517] -->
+			<value name="CylAM" offset="0" length="2" units="mg"  signed="false" rangeMin="None" rangeMax="None" ></value>
+			<!--Comment = Current Estmated Cylinder Airmass-->
+			<value name="EstMAF" offset="2" length="2" units="kg/h"  signed="false" rangeMin="None" rangeMax="None" conversion="V/100.0"></value>
+			<!--Comment = Currrent Estimated Total Airflow
+-->
+			<value name="InjPW" offset="4" length="2" units="ms"  signed="false" rangeMin="None" rangeMax="None" conversion="V/300.000030000003"></value>
+			<!--Comment = Current Commanded Injector Pulsewidth-->
+			<value name="KnockCt" offset="6" length="2" units="count"  signed="false" rangeMin="None" rangeMax="None" ></value>
+			<!--Comment = Knock detection counter-->
+		</frame>
+		<frame canId="0x206" endianess="big">  
+			<!-- BASE6 - Base6[518] -->
+			<value name="FuelUsed" offset="0" length="2" units="g"  signed="false" rangeMin="None" rangeMax="None" ></value>
+			<!--Comment = Total fuel consumed-->
+			<value name="FuelFlow" offset="2" length="2" units="g/s"  signed="false" rangeMin="0" rangeMax="327" conversion="V/200.0"></value>
+			<!--Comment = Fuel flow rate-->
+			<value name="FuelTrim1" offset="4" length="2" units="%"  signed="false" rangeMin="4294967246" rangeMax="50" conversion="V/100.0"></value>
+			<!--Comment = Fuel trim bank 1-->
+			<value name="FuelTrim2" offset="6" length="2" units="%"  signed="false" rangeMin="4294967246" rangeMax="50" conversion="V/100.0"></value>
+			<!--Comment = Fuel trim bank 2-->
+		</frame>
+		<frame canId="0x207" endianess="big">  
+			<!-- BASE7 - Fueling[519] -->
+			<value name="Lam1" offset="0" length="2" units="lambda"  signed="false" rangeMin="0" rangeMax="2" conversion="V/10000.0"></value>
+			<!--Comment = Lambda sensor 1-->
+			<value name="Lam2" offset="2" length="2" units="lambda"  signed="false" rangeMin="0" rangeMax="2" conversion="V/10000.0"></value>
+			<!--Comment = Lambda sensor 2-->
+			<value name="FpLow" offset="4" length="2" units="kPa"  signed="false" rangeMin="None" rangeMax="None" conversion="V/30.000003000000298"></value>
+			<!--Comment = Fuel pressure - low sensor-->
+			<value name="FpHigh" offset="6" length="2" units="bar"  signed="false" rangeMin="None" rangeMax="None" conversion="V/10.0"></value>
+			<!--Comment = Fuel pressure - high (GDI) sensor-->
+		</frame>
+		<frame canId="0x208" endianess="big">  
+			<!-- BASE8 - Cams[520] -->
+			<value name="Cam1I" offset="0" length="1" units="deg"  signed="true" rangeMin="-100" rangeMax="100" ></value>
+			<!--Comment = Cam bank 1 intake actual-->
+			<value name="Cam1Itar" offset="1" length="1" units="deg"  signed="true" rangeMin="-100" rangeMax="100" ></value>
+			<!--Comment = Cam bank 1 intake target-->
+			<value name="Cam1E" offset="2" length="1" units="deg"  signed="true" rangeMin="-100" rangeMax="100" ></value>
+			<!--Comment = Cam bank 1 exhaust actual-->
+			<value name="Cam1Etar" offset="3" length="1" units="deg"  signed="true" rangeMin="-100" rangeMax="100" ></value>
+			<!--Comment = Cam bank 1 exhaust target-->
+			<value name="Cam2I" offset="4" length="1" units="deg"  signed="true" rangeMin="-100" rangeMax="100" ></value>
+			<!--Comment = Cam bank 2 intake actual-->
+			<value name="Cam2Itar" offset="5" length="1" units="deg"  signed="true" rangeMin="-100" rangeMax="100" ></value>
+			<!--Comment = Cam bank 2 intake target-->
+			<value name="Cam2E" offset="6" length="1" units="deg"  signed="true" rangeMin="-100" rangeMax="100" ></value>
+			<!--Comment = Cam bank 2 exhaust actual-->
+			<value name="Cam2Etar" offset="7" length="1" units="deg"  signed="true" rangeMin="-100" rangeMax="100" ></value>
+			<!--Comment = Cam bank 2 exhaust target-->
+		</frame>
+	</frames>
+</RealDashCAN>
