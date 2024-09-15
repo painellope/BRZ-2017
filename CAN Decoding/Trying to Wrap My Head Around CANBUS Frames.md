@@ -1,3 +1,11 @@
+This is the example I will use throughout this document of a CAN frame:
+
+```
+0x141: 84 26 95 27 B1 82 A7 00
+```
+
+`0x141: 84 26 95 27 B1 82 A7 00`
+
 ## Endian and Byte Order
 There are two sets of terminology when it comes to reading a CAN frame. "Byte Order" and "Endian".
 
@@ -11,3 +19,11 @@ Byte Order also comes in two, Motorola and Intel.
 Motorola = Big Endian
 
 Intel = little Endian
+
+From what I can gather, little endian means reading by increasing byte address, and Big endian is reading by decreasing byte address
+
+(byte address is simply the position of the byte within a can frame, low address is byte 0, high address would be byte 7)
+
+
+
+## Offset, Length, Bit Position, good lord
