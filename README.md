@@ -1,7 +1,7 @@
 # BRZ-2017
 Modification checklist and documentation of CAN messages and frames, cable pin outs, wiring, etc. Personal Repository
 
-see [this document](./CAN%20Decoding/README.md)
+see [this document](./CAN%20Decoding/README.md) for all the main work regarding CAN stuff so far.
 
 Tags for Search:
 
