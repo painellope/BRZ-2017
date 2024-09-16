@@ -13,8 +13,8 @@ From what I understand, these are the same thing.
 
 Endian comes in two flavours, Big Endian and little Endian.
 Byte Order also comes in two, Motorola and Intel.
-
-### To make this quick and easy
+ 
+To summarise quick and dirty...
 
 Motorola = Big Endian
 
@@ -90,7 +90,7 @@ RealDash orders the bytes oddly, so just keep that in mind.
 
 Further details regarding bitPosition vs startBit vs offset vs length vs etc will be covered below.
 
-## RealDash Canbus XML Configurations: Explored and Explained
+# RealDash Canbus XML Configurations: Explored and Explained
 
 To figure out all this hex code crap, I've been using a tool called "Kvaser Database Editor" whose terminology differs from RealDash.
 
