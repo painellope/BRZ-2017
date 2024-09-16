@@ -109,3 +109,14 @@ I won't be telling you how to construct a RealDash XML File from scratch (hencef
 Let's use our trusty example canbus frame as a starting point.
 
 `0x141: 84 26 95 27 B1 82 A7 00`
+
+and here is an example frame
+
+````
+<frame id="0x141">
+  <value name="Engine_Torque" bitcount="15"/>
+  <value name="Engine_Engine_Stop" startbit="15" bitcount="1" units="bit"/>
+  <value name="Wheel_Torque" offset="2"/>
+  <value name="Engine_RPM" offset="4"/>
+</frame>
+````
