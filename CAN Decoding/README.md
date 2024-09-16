@@ -1,4 +1,6 @@
+#Trying to Wrap My Head Around CANBUS Frames
 author: painellope
+
 
 This is the example I will use throughout this document of a CAN frame:
 
@@ -8,7 +10,7 @@ This is the example I will use throughout this document of a CAN frame:
 
 `0x141: 84 26 95 27 B1 82 A7 00`
 
-# Endian and Byte Order
+## Endian and Byte Order
 There are two sets of terminology when it comes to reading a CAN frame. "Byte Order" and "Endian".
 
 From what I understand, these are the same thing.
@@ -45,7 +47,7 @@ little endian
 | ![motorola](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/motorola.png) | ![intel](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/Intel.png) |
 
 
-# Offset, Length, Bit Position, good lord
+## Offset, Length, Bit Position, good lord
 
 Now comes the slightly confusing part, out of a 64 bit CANbus frame of 8 bytes (8 bits in 1 byte, 8 bytes in one frame) the bit order of the whole group will NEVER change (at least when within RealDash from my observations).
 
@@ -93,7 +95,7 @@ RealDash orders the bytes oddly, so just keep that in mind.
 
 Further details regarding bitPosition vs startBit vs offset vs length vs etc will be covered below.
 
-# RealDash Canbus XML Configurations: Explored and Explained
+### RealDash Canbus XML Configurations: Explored and Explained
 
 To figure out all this hex code crap, I've been using a tool called "Kvaser Database Editor" whose terminology differs from RealDash. It allows you to play around with different values and has a handy visualisation on the right hand side so you can experiment and deduce what each part means. I would recommend checking it out for yourself to really get a hands on grasp on this stuff. You can use one of the DBC files I have uploaded [here](https://github.com/painellope/BRZ-2017/tree/0accce7f69cb0569dd85316c4a633274736cdf04/CAN%20Decoding/CAN%20Database%20Files) to follow along.
 
@@ -128,7 +130,7 @@ and here is an example frame
 
 Lets go through line by line and figure this thing out.
 
-## **frame 'id' attribute**
+### **frame 'id' attribute**
 https://github.com/janimm/RealDash-extras/blob/master/RealDash-CAN/realdash-can-description-file.md#frame
 > Every **frame** must have an **id** number, specified either in decimal or hexadecimal number (to specify hexadecimal, use the **0x** prefix). Note that if enclosing **frames** have a **baseId** specified, the resulting id number will be **baseId + id**.
 ```
@@ -138,7 +140,7 @@ https://github.com/janimm/RealDash-extras/blob/master/RealDash-CAN/realdash-can-
 ```
 0x141 is the same as 321 (hex to decimal conversion)
 
-## **'baseId' attribute**
+### **'baseId' attribute**
 
 Now this isn't relevant to our example and I'm not 100% certain on what the purpose of this attribute actually is, but I think it's probably used for when the length of a bit value stretches over multiple bytes. I haven't used this so far within my use case but if I do I'll update this with whatever I can glean.
 
@@ -154,11 +156,11 @@ https://github.com/janimm/RealDash-extras/blob/master/RealDash-CAN/realdash-can-
 >    <frames baseId="0x141"> <!-- same as baseId="321"-->
 > ```
 
-## **value 'targetId' attribute**
+### **value 'targetId' attribute**
 This attribute links the frame to whatever RealDash value you want, RPM, Fuel Level, Headlight Status etc.. The **targetId="37"** writes whatever value the CAN frame specifies to RealDash's RPM input. Check out the full listing of [RealDash targetIds](www.realdash.net/manuals/targetid.php).
 
 
-## **value 'name' (optional to targetId)**
+### **value 'name' (optional to targetId)**
 Instead of mapping the value to existing RealDash input, **name** attribute can be used to create new input into RealDash *ECU Specific* category. Name attribute is used only if **targetId** is not present in command. Example:
 ```
      <value name="Custom_Engine_Torque" bitcount="15"/>
