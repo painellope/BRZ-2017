@@ -24,13 +24,9 @@ From what I can gather, little endian means reading by increasing byte address, 
 
 (byte address is simply the position of the byte within a can frame, low address is byte 0, high address would be byte 7)
 
-| motorola             | Hex                                                                |
+| motorola          | intel                                                              |
 | ----------------- | ------------------------------------------------------------------ |
-| ![motorola](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/motorola.png) | ![intel](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/intel.png) |
-
-
-![motorola](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/motorola.png)
-![intel](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/intel.png)
+| ![motorola](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/motorola.png) | ![intel](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/Intel.png) |
 
 
 
