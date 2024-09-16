@@ -83,6 +83,6 @@ Bit 43 is in the column labelled 3 (which is the 4th column from the right becau
 
 Therefore our current value, for bit 43 is 0
 
-RealDash orders the bytes differently keep in mind.
+RealDash orders the bytes oddly, so just keep that in mind.
 
 ![realdashbyteorder](https://github.com/painellope/BRZ-2017/blob/86723ae7b57d732e43ebadeb511f8fd433573165/CAN%20Decoding/referenced%20images/realdash%20byte%20order.png)
