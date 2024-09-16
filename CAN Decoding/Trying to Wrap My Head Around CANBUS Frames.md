@@ -114,7 +114,7 @@ and here is an example frame
 
 ````
 <frame id="0x141">
-  <value name="Engine_Torque" bitcount="15"/>
+  <value name="Custom_Engine_Torque" bitcount="15"/>
   <value name="Engine_Engine_Stop" startbit="15" bitcount="1" units="bit"/>
   <value name="Wheel_Torque" offset="2"/>
   <value targetId="37" offset="4"/>
@@ -148,3 +148,13 @@ https://github.com/janimm/RealDash-extras/blob/master/RealDash-CAN/realdash-can-
 > ```
 >    <frames baseId="0xc80"> <!-- same as baseId="3200"-->
 > ```
+
+## **value 'name' (optional to targetId)**
+Instead of mapping the value to existing RealDash input, **name** attribute can be used to create new input into RealDash *ECU Specific* category. Name attribute is used only if **targetId** is not present in command. Example:
+```
+     <value name="Custom_Engine_Torque" bitcount="15"/>
+```
+> Note that above example do not use **targetId**, but **name** instead. When RealDash reads the XML file, a NEW custom input is created into the *ECU Specific* category called **Custom_Engine_Torque**. This new custom input can be used like any other input in RealDash for gauges and triggers/actions.
+
+> Note: if you make your own dashboard that links into custom inputs, remember that other users need to have same XML available for the dashboard to work correctly. Another solution would be to make the dashboard use [RealDash > build-in inputs](www.realdash.net/manuals/targetid.php) and use the *Input Mapping* feature in RealDash *Settings->Units & Values->Input Mapping*.
+
