@@ -149,6 +149,10 @@ https://github.com/janimm/RealDash-extras/blob/master/RealDash-CAN/realdash-can-
 >    <frames baseId="0x141"> <!-- same as baseId="321"-->
 > ```
 
+## **value 'targetId' attribute**
+This attribute links the frame to whatevery RealDash value you want, RPM, Fuel Level, Headlight Status etc.. The **targetId="37"** writes whatever value the CAN frame specifies to RealDash's RPM input. Check out the full listing of [RealDash targetIds](www.realdash.net/manuals/targetid.php).
+
+
 ## **value 'name' (optional to targetId)**
 Instead of mapping the value to existing RealDash input, **name** attribute can be used to create new input into RealDash *ECU Specific* category. Name attribute is used only if **targetId** is not present in command. Example:
 ```
