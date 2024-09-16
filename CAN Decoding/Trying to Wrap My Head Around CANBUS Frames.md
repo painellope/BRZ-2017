@@ -135,7 +135,7 @@ https://github.com/janimm/RealDash-extras/blob/master/RealDash-CAN/realdash-can-
 
 ## **'baseId' attribute**
 
-I'm not 100% certain on what the purpose of this attribute actually is, but I think it's probably used for when the length of a bit value stretches over multiple bytes. I haven't used this so far within my use case but if I do I'll update this with whatever I can glean.
+Now this isn't relevant to our example and I'm not 100% certain on what the purpose of this attribute actually is, but I think it's probably used for when the length of a bit value stretches over multiple bytes. I haven't used this so far within my use case but if I do I'll update this with whatever I can glean.
 
 https://github.com/janimm/RealDash-extras/blob/master/RealDash-CAN/realdash-can-description-file.md#baseid-attribute-optional
 > **frames** may optionally contain a attribute **baseId** that is used for the enclosed **frame** tags. Example:
