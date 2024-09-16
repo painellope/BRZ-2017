@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RealDashCAN version="2">
+  <frames>
+    <frame id="0x2" endianness="big">
+      <value name="Steering_Angle" offset="0" length="2" signed="true" conversion="V*0.1"/>
+      <value name="COUNTER" startbit="27" bitcount="3"/>
+      <value name="Checksum" offset="4" length="1"/>
+    </frame>
+    <frame id="0xD0" signed="true">
+      <value name="Steering_Angle" length="2" conversion="V*-0.1"/>
+      <value name="Lateral" offset="2" length="2" conversion="V*-0.0035+1"/>
+      <value name="Longitudinal" offset="6" length="2" conversion="V*-3.5e-4"/>
+    </frame>
+    <frame id="0xD1">
+      <value name="Speed" length="2" units="km/h" conversion="V*0.05625"/>
+      <value name="Brake_Pedal" offset="2" length="1"/>
+    </frame>
+    <frame id="0xD2">
+      <value name="Brake_2_Brake_Light" startbit="35" bitcount="1" units="bit"/>
+      <value name="Brake_2_Brake_Related" startbit="36" bitcount="1" units="bit"/>
+      <value name="Right_Brake" offset="6" length="1"/>
+      <value name="Left_Brake" offset="7" length="1"/>
+    </frame>
+    <frame id="0xD3">
+      <value name="Brake_Type_Brake_Light" startbit="21" bitcount="1" units="bit"/>
+      <value name="Speed_Counter" offset="4" length="1"/>
+      <value name="Brake_Type_Brake_Cruise_On" startbit="42" bitcount="1" units="bit"/>
+      <value name="Brake_Type_Brake_Pedal_On" startbit="46" bitcount="1" units="bit"/>
+      <value name="COUNTER" offset="6" length="1"/>
+    </frame>
+    <frame id="0xD4">
+      <value name="FL" length="2" units="km/h" conversion="V*0.0592"/>
+      <value name="FR" offset="2" length="2" units="km/h" conversion="V*0.0592"/>
+      <value name="RL" offset="4" length="2" units="km/h" conversion="V*0.0592"/>
+      <value name="RR" offset="6" length="2" units="km/h" conversion="V*0.0592"/>
+    </frame>
+    <frame id="0x140">
+      <value name="Throttle_Pedal" length="1" conversion="V*0.392157"/>
+      <value name="COUNTER" offset="1"/>
+      <value name="Signal1" startbit="12" bitcount="2"/>
+      <value name="Throttle_Not_Full_Throttle" startbit="14" bitcount="1" units="bit"/>
+      <value name="Throttle_Signal2" startbit="15" bitcount="1" units="bit"/>
+      <value name="Engine_RPM" offset="2"/>
+      <value name="Engine_RPM_BRZ_Specific" startbit="16" bitcount="14"/>
+      <value name="Throttle_Off_Throttle" startbit="30" bitcount="1" units="bit"/>
+      <value name="Throttle_Signal3" startbit="31" bitcount="1" units="bit"/>
+      <value name="Throttle_Cruise" offset="4" length="1"/>
+      <value name="Throttle_Combo" offset="5" length="1"/>
+      <value name="Throttle_Body" offset="6" length="1"/>
+      <value name="Throttle_Off_Throttle_2" startbit="56" bitcount="1" units="bit"/>
+      <value name="Signal4" startbit="57" bitcount="7"/>
+    </frame>
+    <frame id="0x141">
+      <value name="Engine_Torque" bitcount="15"/>
+      <value name="Engine_Engine_Stop" startbit="15" bitcount="1" units="bit"/>
+      <value name="Wheel_Torque" offset="2"/>
+      <value name="Engine_RPM" offset="4"/>
+    </frame>
+    <frame id="0x144">
+      <value name="CruiseControl_OnOffButton" startbit="2" bitcount="1" units="bit"/>
+      <value name="CruiseControl_SET_BUTTON" startbit="3" bitcount="1" units="bit"/>
+      <value name="CruiseControl_RES_BUTTON" startbit="4" bitcount="1" units="bit"/>
+      <value name="CruiseControl_Button" startbit="13" bitcount="1" units="bit"/>
+      <value name="CruiseControl_Cruise_On" startbit="48" bitcount="1" units="bit"/>
+      <value name="CruiseControl_Cruise_Activated" startbit="49" bitcount="1" units="bit"/>
+      <value name="CruiseControl_Brake_Pedal_On" startbit="51" bitcount="1" units="bit"/>
+    </frame>
+    <frame id="0x148">
+      <value name="Manual_Gear" startbit="4" bitcount="4"/>
+      <value name="COUNTER" offset="1"/>
+      <value name="Transmission_Engine" offset="2"/>
+      <value targetId="200" offset="6"/>
+      <value name="Gear_2" startbit="52" bitcount="4"/>
+      <value name="Paddle_Shift" startbit="60" bitcount="2"/>
+    </frame>
+    <frame id="0x150">
+      <value name="Brake_Pressure_Right" length="1"/>
+      <value name="Brake_Pressure_Left" offset="1" length="1"/>
+    </frame>
+    <frame id="0x152">
+      <value name="COUNTER" startbit="12" bitcount="4"/>
+      <value name="Parking_Brake_Light" startbit="51" bitcount="1" units="bit"/>
+      <value name="Stalk_Brake_Light" startbit="52" bitcount="1" units="bit"/>
+      <value name="Stalk_Runlights" startbit="58" bitcount="1" units="bit"/>
+      <value name="Stalk_Headlights" startbit="59" bitcount="1" units="bit"/>
+      <value name="Stalk_Highbeam" startbit="60" bitcount="1" units="bit"/>
+      <value name="Stalk_Wiper" startbit="62" bitcount="1" units="bit"/>
+    </frame>
+    <frame id="0x160">
+      <value name="Brake_Pressure" length="2"/>
+      <value name="ES_Brake_Cruise_Brake_Lights" startbit="20" bitcount="1" units="bit"/>
+      <value name="ES_Brake_Cruise_Fault" startbit="21" bitcount="1" units="bit"/>
+      <value name="ES_Brake_Cruise_Brake_Active" startbit="22" bitcount="1" units="bit"/>
+      <value name="ES_Brake_Cruise_Activated" startbit="23" bitcount="1" units="bit"/>
+      <value name="ES_Brake_SET_1" startbit="45" bitcount="1" units="bit"/>
+      <value name="COUNTER" offset="6"/>
+      <value name="Checksum" offset="7" length="1"/>
+    </frame>
+    <frame id="0x161">
+      <value name="Cruise_Throttle" bitcount="12"/>
+      <value name="Signal1" startbit="12" bitcount="4"/>
+      <value name="ES_Distance_Car_Follow" startbit="16" bitcount="1" units="bit"/>
+      <value name="Signal2" startbit="17" bitcount="3"/>
+      <value name="ES_Distance_Cruise_Brake_Active" startbit="20" bitcount="1" units="bit"/>
+      <value name="ES_Distance_Distance_Swap" startbit="21" bitcount="1" units="bit"/>
+      <value name="ES_Distance_Standstill" startbit="22" bitcount="1" units="bit"/>
+      <value name="ES_Distance_Signal3" startbit="23" bitcount="1" units="bit"/>
+      <value name="Close_Distance" offset="3" length="1" conversion="V*0.019607"/>
+      <value name="Signal4" offset="4"/>
+      <value name="ES_Distance_Standstill_2" startbit="41" bitcount="1" units="bit"/>
+      <value name="ES_Distance_Cruise_Fault" startbit="42" bitcount="1" units="bit"/>
+      <value name="ES_Distance_Signal5" startbit="43" bitcount="1" units="bit"/>
+      <value name="COUNTER" startbit="44" bitcount="3"/>
+      <value name="ES_Distance_Signal6" startbit="47" bitcount="1" units="bit"/>
+      <value name="Cruise_Button" offset="6"/>
+      <value name="Signal7" startbit="51" bitcount="5"/>
+      <value name="Checksum" offset="7" length="1"/>
+    </frame>
+    <frame id="0x162">
+      <value name="ES_Status_Brake" startbit="8" bitcount="1" units="bit"/>
+      <value name="ES_Status_Cruise_Activated" startbit="9" bitcount="1" units="bit"/>
+      <value name="Cruise_RPM" offset="2" length="2"/>
+      <value name="Checksum" offset="4" length="1"/>
+      <value name="COUNTER" offset="6"/>
+    </frame>
+    <frame id="0x164">
+      <value name="COUNTER" bitcount="3"/>
+      <value name="LKAS_Command" offset="1" signed="true" conversion="V*-1"/>
+      <value name="ES_LKAS_LKAS_Active" startbit="24" bitcount="1" units="bit"/>
+      <value name="Checksum" offset="7" length="1"/>
+    </frame>
+    <frame id="0x167">
+      <value name="ES_LDW_All_depart_2015" startbit="0" bitcount="1" units="bit"/>
+      <value name="ES_LDW_Right_Line_2017" startbit="24" bitcount="1" units="bit"/>
+      <value name="ES_LDW_Left_Line_2017" startbit="25" bitcount="1" units="bit"/>
+      <value name="ES_LDW_Sig1All_Depart" startbit="28" bitcount="1" units="bit"/>
+      <value name="ES_LDW_Sig2All_Depart" startbit="31" bitcount="1" units="bit"/>
+      <value name="ES_LDW_LKAS_Inactive_2017" startbit="36" bitcount="1" units="bit"/>
+      <value name="ES_LDW_LKAS_Active" startbit="37" bitcount="1" units="bit"/>
+      <value name="ES_LDW_Sig1Right_Depart" startbit="48" bitcount="1" units="bit"/>
+      <value name="ES_LDW_Sig1Right_Depart_Front" startbit="49" bitcount="1" units="bit"/>
+      <value name="ES_LDW_Sig2Right_Depart" startbit="50" bitcount="1" units="bit"/>
+      <value name="ES_LDW_Left_Depart_Front" startbit="51" bitcount="1" units="bit"/>
+      <value name="ES_LDW_Sig3All_Depart" startbit="52" bitcount="1" units="bit"/>
+    </frame>
+    <frame id="0x25C">
+      <value name="COUNTER" bitcount="3"/>
+      <value name="BSD_RCTA_State" startbit="5" bitcount="1" units="bit"/>
+      <value name="BSD_RCTA_R_ADJACENT" startbit="32" bitcount="1" units="bit"/>
+      <value name="BSD_RCTA_L_ADJACENT" startbit="33" bitcount="1" units="bit"/>
+      <value name="BSD_RCTA_R_APPROACHING" startbit="42" bitcount="1" units="bit"/>
+      <value name="BSD_RCTA_L_APPROACHING" startbit="43" bitcount="1" units="bit"/>
+      <value name="BSD_RCTA_R_RCTA" startbit="46" bitcount="1" units="bit"/>
+      <value name="BSD_RCTA_L_RCTA" startbit="47" bitcount="1" units="bit"/>
+    </frame>
+    <frame id="0x282">
+      <value name="COUNTER" startbit="12" bitcount="4"/>
+      <value name="Dashlights_SEATBELT_FL" startbit="40" bitcount="1" units="bit"/>
+      <value name="Dashlights_LEFT_BLINKER" startbit="44" bitcount="1" units="bit"/>
+      <value name="Dashlights_RIGHT_BLINKER" startbit="45" bitcount="1" units="bit"/>
+    </frame>
+    <frame id="0x370">
+      <value name="Steering_Voltage_Flat" length="1"/>
+      <value name="Steer_Torque_Sensor" startbit="29" bitcount="11" signed="true" conversion="V*-1"/>
+      <value name="COUNTER" offset="5"/>
+    </frame>
+    <frame id="0x374">
+      <value name="BodyInfo_DOOR_OPEN_FR" startbit="24" bitcount="1" units="bit"/>
+      <value name="BodyInfo_DOOR_OPEN_FL" startbit="25" bitcount="1" units="bit"/>
+      <value name="BodyInfo_DOOR_OPEN_RL" startbit="26" bitcount="1" units="bit"/>
+      <value name="BodyInfo_DOOR_OPEN_RR" startbit="27" bitcount="1" units="bit"/>
+      <value name="BodyInfo_DOOR_OPEN_Hatch" startbit="28" bitcount="1" units="bit"/>
+    </frame>
+    <frame id="0x375">
+      <value name="BodyInfo_DOOR_OPEN_Either" startbit="26" bitcount="1" units="bit"/>
+    </frame>
+    <frame id="0x360">
+      <value targetId="152" offset="2" length="1" conversion="V-40"/>
+      <value targetId="14" offset="3" length="1" conversion="V-40"/>
+      <value name="Engine_Temp_Cruise_Activated" startbit="45" bitcount="1" units="bit"/>
+      <value name="Saved_Speed" offset="7" length="1"/>
+    </frame>
+    <frame id="0x361">
+      <value name="Gear" length="1"/>
+    </frame>
+    <frame id="0x3D1">
+      <value name="Dash_State2_UNITS" startbit="15" bitcount="1" units="bit"/>
+    </frame>
+    <frame id="0x6D1">
+      <value name="Dash_State_Units" startbit="15" bitcount="1" units="bit"/>
+    </frame>
+  </frames>
+</RealDashCAN>
