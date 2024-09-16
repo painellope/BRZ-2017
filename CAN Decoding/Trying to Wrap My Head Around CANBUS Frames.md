@@ -120,3 +120,13 @@ and here is an example frame
   <value name="Engine_RPM" offset="4"/>
 </frame>
 ````
+
+Lets go through line by line and figure this thing out.
+
+## **frame 'id' attribute**
+Every **frame** must have an **id** number, specified either in decimal or hexadecimal number (with **0x** prefix). Note that if enclosing **frames** have a **baseId** specified, the resulting id number will be **baseId + id**.
+
+    <frame id="3200">
+    or
+    <frame id="0xc80">
+
