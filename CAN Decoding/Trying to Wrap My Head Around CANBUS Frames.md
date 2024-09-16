@@ -60,5 +60,12 @@ The sequence or position name (or whatever you want to call it) of each bit is a
 | **7** | _63_  | _62_  | _61_  | _60_  | _59_  | _58_  | _57_  | _56_  |
 
 
+With the table above, let's use our example and try to find the 43rd bit.
+
+| 0x141 | 83       | 26       | 95       | 27       | B1       | 82       | A7       | 00       |
+|-------|----------|----------|----------|----------|----------|----------|----------|----------|
+|       | 10000011 | 00100110 | 10010101 | 00100111 | 10110001 | 10000010 | 10100111 | 00000000 |
+
+
 
 ## Offset, Length, Bit Position, good lord
