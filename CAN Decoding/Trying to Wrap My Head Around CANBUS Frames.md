@@ -154,7 +154,7 @@ Instead of mapping the value to existing RealDash input, **name** attribute can 
 ```
      <value name="Custom_Engine_Torque" bitcount="15"/>
 ```
-> Note that above example do not use **targetId**, but **name** instead. When RealDash reads the XML file, a NEW custom input is created into the *ECU Specific* category called **Custom_Engine_Torque**. This new custom input can be used like any other input in RealDash for gauges and triggers/actions.
+> Note that the above example does not use **targetId**, but **name** instead. When RealDash reads the XML file, a NEW custom input is created into the *ECU Specific* category called **Custom_Engine_Torque**. This new custom input can be used like any other input in RealDash for gauges and triggers/actions.
 
 > Note: if you make your own dashboard that links into custom inputs, remember that other users need to have same XML available for the dashboard to work correctly. Another solution would be to make the dashboard use [RealDash > build-in inputs](www.realdash.net/manuals/targetid.php) and use the *Input Mapping* feature in RealDash *Settings->Units & Values->Input Mapping*.
 
