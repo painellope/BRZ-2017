@@ -19,3 +19,19 @@ CANBUS
 can_ 
 decoder
 CAN BUS
+headunit
+head unit
+radio
+pinout
+wiring
+diagram
+circuit
+dbc
+xml
+realdash
+Real Dash
+instrument cluster
+gauge cluster
+digital dash
+digital gauges
+dashboard
