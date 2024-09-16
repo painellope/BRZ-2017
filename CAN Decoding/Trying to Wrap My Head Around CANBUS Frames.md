@@ -117,7 +117,7 @@ and here is an example frame
   <value name="Custom_Engine_Torque" bitcount="15"/>
   <value name="Engine_Engine_Stop" startbit="15" bitcount="1" units="bit"/>
   <value name="Wheel_Torque" offset="2"/>
-  <value targetId="37" offset="4"/>
+  <value targetId="37" offset="4" length="6"/>
 </frame>
 ````
 
