@@ -169,7 +169,9 @@ When building the XML for my BRZ via the preglobal_2015 dbc file, many new Custo
 https://my.realdash.net has a tool built in that allows you to upload dbc files, which it will then convert to xml and upload to your "Garage". I believe you need to have the paid subscription to RealDash to use this feature, however.
 
 startbit = which bit to start reading from
+
 bitcount = how many bits to read together to get value
 
 offset = which hex byte to start reading from
+
 length = how many hex bytes to read together to get the value
