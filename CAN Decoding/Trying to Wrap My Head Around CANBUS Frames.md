@@ -67,8 +67,8 @@ With the table above, let's use our example and try to find the 43rd bit.
 
 | frameId | 0        | 1        | 2        | 3        | 4        | 5        | 6        | 7        |
 |---------|----------|----------|----------|----------|----------|----------|----------|----------|
-| 0x141   | 83       | 26       | 95       | 27       | B1       | 82       | A7       | 00       |
-|         | 10000011 | 00100110 | 10010101 | 00100111 | 10110001 | 10000010 | 10100111 | 00000000 |
+| 0x141   | 84       | 26       | 95       | 27       | B1       | 82       | A7       | 00       |
+|         | 10000100 | 00100110 | 10010101 | 00100111 | 10110001 | 10000010 | 10100111 | 00000000 |
 
 Now remember, the bit position doesn't change, regardless of whether we are using Big or Little Endian.
 
