@@ -81,7 +81,7 @@ Bit 43 is in the column labelled 3 (which is the 4th column from the right becau
 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | - | - | - | - | ^ | - | - | - |
 
-Therefore our current value, for bit 43 is 0
+Therefore our current value, for bit position 43 is "0".
 
 RealDash orders the bytes oddly, so just keep that in mind.
 
