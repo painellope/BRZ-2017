@@ -42,7 +42,9 @@ little endian
 | ----------------- | ------------------------------------------------------------------ |
 | ![motorola](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/motorola.png) | ![intel](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/Intel.png) |
 
-Then comes the slightly confusing part, out of a 65 bit CANbus frame of 8 bytes (8 bits in 1 byte, 8 bytes in one frame) the bit order of the whole group will NEVER change (at least when within RealDash from my observations)
+Then comes the slightly confusing part, out of a 65 bit CANbus frame of 8 bytes (8 bits in 1 byte, 8 bytes in one frame) the bit order of the whole group will NEVER change (at least when within RealDash from my observations).
+
+Byte Order only refers to what order the data is read, not how the data is interpreted as a whole by the program.
 
 The sequence or position name (or whatever you want to call it) of each bit is as follows:
 
