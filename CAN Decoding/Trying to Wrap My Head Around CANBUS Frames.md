@@ -124,9 +124,9 @@ and here is an example frame
 Lets go through line by line and figure this thing out.
 
 ## **frame 'id' attribute**
-Every **frame** must have an **id** number, specified either in decimal or hexadecimal number (to specify hexadecimal, use the **0x** prefix). Note that if enclosing **frames** have a **baseId** specified, the resulting id number will be **baseId + id**.
-
-    <frame id="321">
-    or
-    <frame id="0x141">
-
+> Every **frame** must have an **id** number, specified either in decimal or hexadecimal number (to specify hexadecimal, use the **0x** prefix). Note that if enclosing **frames** have a **baseId** specified, the resulting id number will be **baseId + id**.
+>```
+>    <frame id="321">
+>    or
+>    <frame id="0x141">
+>```
