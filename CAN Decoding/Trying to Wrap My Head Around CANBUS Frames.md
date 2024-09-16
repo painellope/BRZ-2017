@@ -71,3 +71,14 @@ With the table above, let's use our example and try to find the 43rd bit.
 |         | 10000011 | 00100110 | 10010101 | 00100111 | 10110001 | 10000010 | 10100111 | 00000000 |
 
 Now remember, the bit position doesn't change, regardless of whether we are using Big or Little Endian.
+
+
+So, Bit number 43 is in the 5th byte, as we can see from the main table above. The 5th byte in the second table is byte value "82".
+Bit 43 is in the column labelled 3 (which is the 4th column from the right because we start counting from 0). Now, in the binary conversion of byte "82" we start counting from the right till we reach bit position 3 within this byte.
+
+| **7** | **6** | **5** | **4** | **3** | **2** | **1** | **0** |
+|-------|-------|-------|-------|-------|-------|-------|-------|
+| 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| - | - | - | - | ^ | - | - | - |
+
+Therefore our current value, for bit 43 is 0
