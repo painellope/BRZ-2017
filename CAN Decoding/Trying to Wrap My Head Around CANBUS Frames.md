@@ -92,7 +92,7 @@ Further details regarding bitPosition vs startBit vs offset vs length vs etc wil
 
 # RealDash Canbus XML Configurations: Explored and Explained
 
-To figure out all this hex code crap, I've been using a tool called "Kvaser Database Editor" whose terminology differs from RealDash.
+To figure out all this hex code crap, I've been using a tool called "Kvaser Database Editor" whose terminology differs from RealDash. It allows you to play around with different values and has a handy visualisation on the right hand side so you can experiment and deduce what each part means.
 
 RealDash's CAN XML specification utilises 2 main reference source pages
 
