@@ -96,8 +96,16 @@ To figure out all this hex code crap, I've been using a tool called "Kvaser Data
 
 RealDash's CAN XML specification utilises 2 main reference source pages
 
-"Target Identifiers" https://realdash.net/manuals/targetid.php
+"Target Identifiers" 
+https://realdash.net/manuals/targetid.php
 
 and
 
-"Channel Description File" https://github.com/janimm/RealDash-extras/blob/175c6e1c8c08a9c8f1a8e61ca5505b3488e8090e/RealDash-CAN/realdash-can-description-file.md 
+"Channel Description File" 
+https://github.com/janimm/RealDash-extras/blob/175c6e1c8c08a9c8f1a8e61ca5505b3488e8090e/RealDash-CAN/realdash-can-description-file.md 
+
+I won't be telling you how to construct a RealDash XML File from scratch (henceforth refered as RDXML), but I will try my best to give the basic rundown on the terminology and how to read a "frame description".
+
+Let's use our trusty example canbus frame as a starting point.
+
+`0x141: 84 26 95 27 B1 82 A7 00`
