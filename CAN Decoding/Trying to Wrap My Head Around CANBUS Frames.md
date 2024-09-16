@@ -164,5 +164,7 @@ Instead of mapping the value to existing RealDash input, **name** attribute can 
 
 When building the XML for my BRZ via the preglobal_2015 dbc file, many new Custom inputs were created as the DBC file used generic labels and names for each frame rather than the RealDash specific targetId's. I've been going through RealDash and manually assigning each value with the custom input created when I converted the dbc file.
 
+[subaru preglobal 2015 dbc](CAN Database Files/_subaru_preglobal_2015.dbc)
+
 https://my.realdash.net has a tool built in that allows you to upload dbc files, which it will then convert to xml and upload to your "Garage". I believe you need to have the paid subscription to RealDash to use this feature, however.
 
