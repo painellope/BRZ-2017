@@ -132,3 +132,17 @@ https://github.com/janimm/RealDash-extras/blob/master/RealDash-CAN/realdash-can-
     <frame id="0x141">
 ```
 0x141 is the same as 321 (hex to decimal conversion)
+
+## **'baseId' attribute**
+
+I'm not 100% certain on what the purpose of this attribute actually is, but I think it's probably used for when the length of a bit value stretches over multiple bytes. I haven't used this so far within my use case but if I do I'll update this with whatever I can glean.
+
+**frames** may optionally contain a attribute **baseId** that is used for the enclosed **frame** tags. Example:
+
+    <frames baseId="3200">
+
+Specifies the **baseId** of 3200. Any id value in later **frame** is added to the base id. For example, if **frames baseId** is 3200 and it contains a frame with **id** 1, then the frame is considered to have an **id** of 3201.
+
+The **baseId** and the **id** in **frame** can also be specified as hexadecimal value with prefix of **0x**. Example:
+
+    <frames baseId="0xc80"> <!-- same as baseId="3200"-->
