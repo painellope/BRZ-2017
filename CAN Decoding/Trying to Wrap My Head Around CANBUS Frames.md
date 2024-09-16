@@ -97,5 +97,7 @@ To figure out all this hex code crap, I've been using a tool called "Kvaser Data
 RealDash's CAN XML specification utilises 2 main reference source pages
 
 "Target Identifiers" https://realdash.net/manuals/targetid.php
-and the
+
+and
+
 "Channel Description File" https://github.com/janimm/RealDash-extras/blob/175c6e1c8c08a9c8f1a8e61ca5505b3488e8090e/RealDash-CAN/realdash-can-description-file.md 
