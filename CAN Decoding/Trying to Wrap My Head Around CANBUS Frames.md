@@ -1,3 +1,5 @@
+author: painellope
+
 This is the example I will use throughout this document of a CAN frame:
 
 ```
