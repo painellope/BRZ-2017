@@ -88,4 +88,6 @@ RealDash orders the bytes oddly, so just keep that in mind.
 <img src="https://github.com/painellope/BRZ-2017/blob/86723ae7b57d732e43ebadeb511f8fd433573165/CAN%20Decoding/referenced%20images/realdash%20byte%20order.png" width="484" height="381">
 <img src="https://github.com/painellope/BRZ-2017/blob/b8e7bec423e73d6953f52c157df50c9de8b5d64b/CAN%20Decoding/referenced%20images/realdash%20byte%20order%20copy.png" width="484" height="381">
 
-# RealDash Canbus XML Configurations: Explored and Explained
+Further details regarding bitPosition vs startBit vs offset vs length vs etc will be covered below.
+
+## RealDash Canbus XML Configurations: Explored and Explained
