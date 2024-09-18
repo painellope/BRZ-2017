@@ -27,6 +27,9 @@
       <value name="Brake_Type_Brake_Cruise_On" startbit="42" bitcount="1" units="bit"/>
       <value name="Brake_Type_Brake_Pedal_On" startbit="46" bitcount="1" units="bit"/>
       <value name="COUNTER" offset="6" length="1"/>
+      <value name="Traction_Control" startbit="5" bitcount="1" units="bit"/>
+      <value name="Stability_Control" startbit="11" bitcount="1" units="bit"/>
+      <value name="Track_Mode" startbit="3" bitcount="1" units="bit"/>
     </frame>
     <frame id="0xD4">
       <value name="FL" length="2" units="km/h" conversion="V*0.0592"/>
@@ -54,7 +57,7 @@
       <value name="Engine_Torque" bitcount="15"/>
       <value name="Engine_Engine_Stop" startbit="15" bitcount="1" units="bit"/>
       <value name="Wheel_Torque" offset="2"/>
-      <value name="Engine_RPM" offset="4"/>
+      <value name="Engine_RPM2" offset="4"/>
     </frame>
     <frame id="0x144">
       <value name="CruiseControl_OnOffButton" startbit="2" bitcount="1" units="bit"/>
@@ -81,7 +84,7 @@
       <value name="COUNTER" startbit="12" bitcount="4"/>
       <value name="Parking_Brake_Light" startbit="51" bitcount="1" units="bit"/>
       <value name="Stalk_Brake_Light" startbit="52" bitcount="1" units="bit"/>
-      <value name="Stalk_Runlights" startbit="58" bitcount="1" units="bit"/>
+      <value name="Stalk_DaytimeRunlights" startbit="58" bitcount="1" units="bit"/>
       <value name="Stalk_Headlights" startbit="59" bitcount="1" units="bit"/>
       <value name="Stalk_Highbeam" startbit="60" bitcount="1" units="bit"/>
       <value name="Stalk_Wiper" startbit="62" bitcount="1" units="bit"/>
@@ -170,13 +173,19 @@
       <value name="BodyInfo_DOOR_OPEN_RL" startbit="26" bitcount="1" units="bit"/>
       <value name="BodyInfo_DOOR_OPEN_RR" startbit="27" bitcount="1" units="bit"/>
       <value name="BodyInfo_DOOR_OPEN_Hatch" startbit="28" bitcount="1" units="bit"/>
+      <value name="Fog_Lamp" startbit="14" bitcount="1" units="bit"/>
+      <value name="Fog_Lamp_Rear" startbit="15" bitcount="1" units="bit"/>
+
+
     </frame>
     <frame id="0x375">
       <value name="BodyInfo_DOOR_OPEN_Either" startbit="26" bitcount="1" units="bit"/>
+      <value name="BodyInfo_Door_Lock_Right" bitcount="1" units="bit"/>
+      <value name="BodyInfo_Door_Lock_Left" startbit="1" bitcount="1" units="bit"/>
     </frame>
     <frame id="0x360">
-      <value targetId="152" offset="2" length="1" conversion="V-40"/>
-      <value targetId="14" offset="3" length="1" conversion="V-40"/>
+      <value targetId="152" offset="2" length="1" conversion="V-40"/> <!-- engine oil temp -->
+      <value targetId="14" offset="3" length="1" conversion="V-40"/> <!-- coolant -->
       <value name="Engine_Temp_Cruise_Activated" startbit="45" bitcount="1" units="bit"/>
       <value name="Saved_Speed" offset="7" length="1"/>
     </frame>
