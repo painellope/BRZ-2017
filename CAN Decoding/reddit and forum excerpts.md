@@ -54,3 +54,23 @@ Hopefully that would points you in the right direct. I have more documentation o
 A tip: any entries stuff (like door/trunk/window/lights/sounds/ etc.. and stuff ;)
 Cheers!
 ```
+
+https://racechrono.com/forum/discussion/1764/custom-pids-for-frs-brz-gt86
+
+```
+timurrrr
+April 2021
+Another PID I found on the ft86club forum (thanks map@!) is "fuel remaining".
+Even though there's a standard PID for that, it's known that the standard PID it fluctuates a lot and isn't very useful.
+
+Here's a comparison between the custom PID I found (green) and the standard one (orange) during my recent track day:
+https://imgur.com/mxo9h2p
+
+Channel: Fuel level (L)
+OBD-II header: 0x7C0
+PID: 0x2129
+Equation: A/2
+timurrrr
+July 2021
+minor correction: a better "fuel remaining (liters)" equation would be "A * 0.5"
+```
