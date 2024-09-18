@@ -70,6 +70,7 @@ Channel: Fuel level (L)
 OBD-II header: 0x7C0
 PID: 0x2129
 Equation: A/2
+
 timurrrr
 July 2021
 minor correction: a better "fuel remaining (liters)" equation would be "A * 0.5"
