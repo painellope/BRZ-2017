@@ -18,3 +18,5 @@ By matching with the photos in that thread, think this should be right?
 ![D29 Pinout](https://github.com/painellope/BRZ-2017/blob/f55692cc5904b0082c786e54493a5801993b0490/BRZ-Wiring/Unofficial%20D29%20Pin%20Numbering.png)
 
 https://www.youtube.com/watch?v=9K_2w1hwh_g
+
+![d29 unused accessory plug](https://github.com/painellope/BRZ-2017/blob/76abeaf78203259e21c5f05df86507a4c784d554/BRZ-Wiring/d29%20unused%20pin.png)
