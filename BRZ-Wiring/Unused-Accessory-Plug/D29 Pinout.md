@@ -21,4 +21,5 @@ https://www.youtube.com/watch?v=9K_2w1hwh_g
 
 ![d29 unused accessory plug](https://github.com/painellope/BRZ-2017/blob/0408fb446cbdf566238f6ac23d198dcd3a034bc0/BRZ-Wiring/Unused-Accessory-Plug/d29%20unused%20pin.png)
 
+![Official Pin Out](https://github.com/painellope/BRZ-2017/blob/3ca475ca77d437d3023d84cd33d53e48ff0af30e/BRZ-Wiring/Unused-Accessory-Plug/Official%20D29%20Pinout.png)
 ![ciruit diagram](https://github.com/painellope/BRZ-2017/blob/07f2ab8b666732a4acb8e101e70afff8577ce432/BRZ-Wiring/Unused-Accessory-Plug/circuit%20diagram%20pinout.png)
