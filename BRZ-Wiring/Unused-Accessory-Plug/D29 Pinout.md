@@ -19,6 +19,6 @@ By matching with the photos in that thread, think this should be right?
 
 https://www.youtube.com/watch?v=9K_2w1hwh_g
 
-![d29 unused accessory plug](https://github.com/painellope/BRZ-2017/blob/76abeaf78203259e21c5f05df86507a4c784d554/BRZ-Wiring/Unused-Accessory-Plug/d29%20unused%20pin.png)
+![d29 unused accessory plug](https://github.com/painellope/BRZ-2017/blob/0408fb446cbdf566238f6ac23d198dcd3a034bc0/BRZ-Wiring/Unused-Accessory-Plug/d29%20unused%20pin.png)
 
 ![ciruit diagram](https://github.com/painellope/BRZ-2017/blob/07f2ab8b666732a4acb8e101e70afff8577ce432/BRZ-Wiring/Unused-Accessory-Plug/circuit%20diagram%20pinout.png)
