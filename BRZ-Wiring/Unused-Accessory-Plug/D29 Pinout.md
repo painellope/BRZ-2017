@@ -25,3 +25,5 @@ Official Pinout order and circuit Diagram:
 
 ![Official Pin Out](https://github.com/painellope/BRZ-2017/blob/3ca475ca77d437d3023d84cd33d53e48ff0af30e/BRZ-Wiring/Unused-Accessory-Plug/Official%20D29%20Pinout.png)
 ![ciruit diagram](https://github.com/painellope/BRZ-2017/blob/07f2ab8b666732a4acb8e101e70afff8577ce432/BRZ-Wiring/Unused-Accessory-Plug/circuit%20diagram%20pinout.png)
+
+![female Plug Diagram](https://github.com/painellope/BRZ-2017/blob/114263d9986bc9eb1a31ccd6e640362caa54f101/BRZ-Wiring/Unused-Accessory-Plug/Female%20Plug%20Adapter%20Pin%20Diagram.JPG)
