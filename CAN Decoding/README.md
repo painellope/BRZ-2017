@@ -70,7 +70,7 @@ The sequence or position name (or whatever you want to call it) of each bit is a
 
 With the table above, let's use our example and try to find the 43rd bit.
 
-| frameId | 0        | 1        | 2        | 3        | 4        | 5        | 6        | 7        |
+| frameId\ByteNum | 0        | 1        | 2        | 3        | 4        | 5        | 6        | 7        |
 |---------|----------|----------|----------|----------|----------|----------|----------|----------|
 | 0x141   | 84       | 26       | 95       | 27       | B1       | 82       | A7       | 00       |
 |         | 10000100 | 00100110 | 10010101 | 00100111 | 10110001 | 10000010 | 10100111 | 00000000 |
