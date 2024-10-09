@@ -98,7 +98,6 @@ Further details regarding bitPosition vs startBit vs offset vs length vs etc wil
 ## RealDash Canbus XML Configurations: Explored and Explained
 
 To figure out all this hex code crap, I've been using a tool called "Kvaser Database Editor" whose terminology differs from RealDash. It allows you to play around with different values and has a handy visualisation on the right hand side so you can experiment and deduce what each part means. I would recommend checking it out for yourself to really get a hands on grasp on this stuff. You can use one of the DBC files I have uploaded [here](https://github.com/painellope/BRZ-2017/tree/1c5f8e61532b4c829544a7f5527b001cfcd986cd/CAN_Decoding/CAN_Database_Files) to follow along.
-https://github.com/painellope/BRZ-2017/tree/1c5f8e61532b4c829544a7f5527b001cfcd986cd/CAN_Decoding/CAN_Database_Files
 
 <img src="referenced_images/Screenshot_2024-09-16_120339.png" width="750">
 
@@ -172,7 +171,7 @@ Instead of mapping the value to existing RealDash input, **name** attribute can 
 
 When building the XML for my BRZ via the preglobal_2015 dbc file, many new Custom inputs were created as the DBC file used generic labels and names for each frame rather than the RealDash specific targetId's. I've been going through RealDash and manually assigning each value with the custom input created when I converted the dbc file.
 
-[_subaru_preglobal_2015.dbc](https://github.com/painellope/BRZ-2017/tree/0accce7f69cb0569dd85316c4a633274736cdf04/CAN%20Decoding/CAN%20Database%20Files)
+[_subaru_preglobal_2015.dbc](https://github.com/painellope/BRZ-2017/tree/1c5f8e61532b4c829544a7f5527b001cfcd986cd/CAN_Decoding/CAN_Database_Files)
 
 https://my.realdash.net has a tool built in that allows you to upload dbc files, which it will then convert to xml and upload to your "Garage". I believe you need to have the paid subscription to RealDash to use this feature, however.
 
