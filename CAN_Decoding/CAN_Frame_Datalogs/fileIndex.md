@@ -12,3 +12,13 @@ this was a test I did to find the brake light and the steering angle, disregard.
 
 A short regular drive, not super verbose.
 
+## canplayback2.py
+
+An adjusted version of this python script that broadcasts can frames from RDCAN logs locally for realdash to use (this is mainly for testing xml inputs and creating dashboards without needing to sit in your car)
+This adjusted version allows you to set the push speed of the frames. It is still limited however as frames with less than 8 bytes are padded with zeroes. eg: 
+
+In a terminal, cd to the file path of your RDCAN log and the "canplayback2.py" file
+
+python3 canplayback2.py rdcan_file.csv "port number" "frame push speed"
+
+I usually set the frame push speed to 89000. In realdash this gives me about 400 frames/sec, which is close enough to what I get directly from my BRZ at 500k baud using a OBDLink SX USB adapter.
