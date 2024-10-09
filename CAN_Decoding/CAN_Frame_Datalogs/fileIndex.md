@@ -25,13 +25,14 @@ becomes
 0x0d3: 00 06 C0 0F 00 00 42 00
 ```
 This messes with the endian in places. When using playback, the speed indicator doesn't pull correctly using my XML because the speed value comes from a frame with less than 8 bytes. The padded zeroes mess with the bit counting because the extra zeroes have added 16 more bits to the equation.
-
+___
+### Usage
 In a terminal, cd to the file path of your RDCAN log and the "canplayback2.py" file
 ```
 python3 canplayback2.py rdcan_file.csv "port number" "frame push speed"
 ```
 I usually set the frame push speed to 89000. In realdash this gives me about 400 frames/sec, which is close enough to what I get directly from my BRZ at 500k baud using a OBDLink SX USB adapter.
-
+___
 *Original without frame push speed adjustment*
 
 https://github.com/janimm/RealDash-extras/tree/master/CanPlayback
