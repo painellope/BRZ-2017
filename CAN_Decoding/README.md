@@ -90,16 +90,17 @@ Therefore our current value, for bit position 43 is "0".
 
 RealDash orders the bytes oddly, so just keep that in mind.
 
-<img src="https://github.com/painellope/BRZ-2017/blob/86723ae7b57d732e43ebadeb511f8fd433573165/CAN%20Decoding/referenced%20images/realdash%20byte%20order.png" width="484" height="381">
-<img src="https://github.com/painellope/BRZ-2017/blob/b8e7bec423e73d6953f52c157df50c9de8b5d64b/CAN%20Decoding/referenced%20images/realdash%20byte%20order%20copy.png" width="484" height="381">
+<img src="referenced_images/realdash_byte_order.png" width="484" height="381">
+<img src="referenced_images/realdash_byte_order_copy.png" width="484" height="381">
 
 Further details regarding bitPosition vs startBit vs offset vs length vs etc will be covered below.
 
 ## RealDash Canbus XML Configurations: Explored and Explained
 
-To figure out all this hex code crap, I've been using a tool called "Kvaser Database Editor" whose terminology differs from RealDash. It allows you to play around with different values and has a handy visualisation on the right hand side so you can experiment and deduce what each part means. I would recommend checking it out for yourself to really get a hands on grasp on this stuff. You can use one of the DBC files I have uploaded [here](https://github.com/painellope/BRZ-2017/tree/0accce7f69cb0569dd85316c4a633274736cdf04/CAN%20Decoding/CAN%20Database%20Files) to follow along.
+To figure out all this hex code crap, I've been using a tool called "Kvaser Database Editor" whose terminology differs from RealDash. It allows you to play around with different values and has a handy visualisation on the right hand side so you can experiment and deduce what each part means. I would recommend checking it out for yourself to really get a hands on grasp on this stuff. You can use one of the DBC files I have uploaded [here](https://github.com/painellope/BRZ-2017/tree/1c5f8e61532b4c829544a7f5527b001cfcd986cd/CAN_Decoding/CAN_Database_Files) to follow along.
+https://github.com/painellope/BRZ-2017/tree/1c5f8e61532b4c829544a7f5527b001cfcd986cd/CAN_Decoding/CAN_Database_Files
 
-<img src="https://github.com/painellope/BRZ-2017/blob/19bc28fcdb16548da63bcbaa9a9e2b9e1232d5ea/CAN%20Decoding/referenced%20images/Screenshot%202024-09-16%20120339.png" width="750">
+<img src="referenced_images/Screenshot_2024-09-16_120339.png" width="750">
 
 RealDash's CAN XML specification utilises 2 main reference source pages
 
