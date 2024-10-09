@@ -167,6 +167,9 @@
       <value name="Steer_Torque_Sensor" startbit="29" bitcount="11" signed="true" conversion="V*-1"/>
       <value name="COUNTER" offset="5"/>
     </frame>
+    <frame id="0x372">
+      <value name="BodyInfo_Airbag" offset="1" length="1"/>
+    </frame>
     <frame id="0x374">
       <value name="BodyInfo_DOOR_OPEN_FR" startbit="24" bitcount="1" units="bit"/>
       <value name="BodyInfo_DOOR_OPEN_FL" startbit="25" bitcount="1" units="bit"/>
