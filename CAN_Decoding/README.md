@@ -44,7 +44,7 @@ little endian
 
 | motorola, big endian        | intel, little endian                                                      |
 | ----------------- | ------------------------------------------------------------------ |
-| ![motorola](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/motorola.png) | ![intel](https://github.com/painellope/BRZ-2017/blob/c113d158e0237d8665a8e1dd43bda497d2bf6d48/CAN%20Decoding/referenced%20images/Intel.png) |
+| ![motorola](referenced_images/motorola.png) | ![intel](referenced_images/Intel.png) |
 
 
 ## Offset, Length, Bit Position, good lord
