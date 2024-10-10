@@ -12,6 +12,10 @@ this was a test I did to find the brake light and the steering angle, disregard.
 
 A short regular drive, not super verbose.
 
+## rdcan_2024-10-10_15-20-00.csv
+
+a test of the keyless entry system, locking system, approach and unlock, lock and leave car deactivation, so on.
+
 ## canplayback2.py
 
 An adjusted version of [this](https://github.com/janimm/RealDash-extras/tree/master/CanPlayback) python script that broadcasts can frames from RDCAN logs locally for realdash to use (this is mainly for testing xml inputs and creating dashboards without needing to sit in your car)
