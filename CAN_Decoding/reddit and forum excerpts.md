@@ -77,42 +77,46 @@ minor correction: a better "fuel remaining (liters)" equation would be "A * 0.5"
 ```
 
 https://forum.realdash.net/t/can-example-for-indicator-lights/5514/8
+
 Some good explainations in here about certain parts.
 
-```
-So you need to build the frame and values;
-first find your targetID use the information found here: RealDash | Manuals | Target Identifiers 8
+Ci_eav May 27
+>So you need to build the frame and values;
+>first find your targetID use the information found here: RealDash | Manuals | Target Identifiers 8
+> 
+>Then looking at your example; you will need something like
+> 
+>your frameID will be; frame id=“0x140”
+> 
+>Left Indicator;
+>```
+>offset="2"
+>length="1"
+>units="bit"
+>conversion="V &amp; 6 >> 2"
+>```
+>Right Indicator
+>```
+>offset="2"
+>length="1"
+>units="bit"
+>conversion="V &amp; 9 >> 3"
+>```
+>Basically offset to get the byte position starts at 0, length of 1 means single byte or 8 bits, then the conversion uses BITWISE AND to capture the bits required then shifts the bit you need to the LSB position.
+> 
+>Hope this helps
 
-Then looking at your example; you will need something like
 
-your frameID will be; frame id=“0x140”
-
-Left Indicator;
-
-offset="2"
-length="1"
-units="bit"
-conversion="V &amp; 6 >> 2"
-Right Indicator
-
-offset="2"
-length="1"
-units="bit"
-conversion="V &amp; 9 >> 3"
-Basically offset to get the byte position starts at 0, length of 1 means single byte or 8 bits, then the conversion uses BITWISE AND to capture the bits required then shifts the bit you need to the LSB position.
-
-Hope this helps
-```
-
-```
-The reason for the BITSHIFT is, if the targetID is only expecting a single bit (yes/no) then you need to move the bit to the LSB for it to work.
-
-if offset 0 shows 00010000 highbeam off and 10110000 for on then bit 5 and 7 are changing to high, so this could be two things turning on, if turning the high beams on always turns bit 5 and 7 high then you could use either bit to set your TargetID;
-
-offset=“0”
-Length=“1”
-conversion=“V>>5”
-
-this would then look like this 10110000 >> 5 = 00000101
-```
+Ci_eav May 28
+>The reason for the BITSHIFT is, if the targetID is only expecting a single bit (yes/no) then you need to move the bit to the LSB for it to work.
+> 
+>if offset 0 shows 00010000 highbeam off and 10110000 for on then bit 5 and 7 are changing to high, so this could be two things turning on, if turning the high beams on always turns bit 5 and 7 high then you could use either bit to set your TargetID;
+>
+>```
+>offset=“0”
+>Length=“1”
+>conversion=“V>>5”
+>```
+> 
+>this would then look like this 10110000 >> 5 = 00000101
 
