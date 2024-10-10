@@ -156,6 +156,9 @@
       <value name="BSD_RCTA_R_RCTA" startbit="46" bitcount="1" units="bit"/>
       <value name="BSD_RCTA_L_RCTA" startbit="47" bitcount="1" units="bit"/>
     </frame>
+    <frame id="0x280">
+      <value name="BodyInfo_Aircon_Speed" length="1"/>
+    </frame>
     <frame id="0x282">
       <value name="COUNTER" startbit="12" bitcount="4"/>
       <value name="Dashlights_SEATBELT_FL" startbit="40" bitcount="1" units="bit"/>
